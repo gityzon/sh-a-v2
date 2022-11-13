@@ -4,10 +4,10 @@ if [ ! -f "alist" ];then
   curl -L https://github.com/alist-org/alist/releases/download/v2.6.3/alist-linux-amd64.tar.gz -o alist-linux-amd64.tar.gz
   tar -zxvf alist-linux-amd64.tar.gz
   rm -f alist-linux-amd64.tar.gz
-  mv alist-linux-musl-amd64 alist
+  mv alist-linux-amd64 alist
   chmod +x alist
 
-  #download config(listen on port 3000)
+  #config(listen on port 3000)
   mkdir data
   cd data
   cat > config.json <<EOF
