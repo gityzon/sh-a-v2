@@ -1,6 +1,6 @@
 
 if [ ! -f "alist" ];then
-  #download alist lastest
+  #download alist
   curl -L https://github.com/alist-org/alist/releases/download/v2.6.3/alist-linux-amd64.tar.gz -o alist-linux-amd64.tar.gz
   tar -zxvf alist-linux-amd64.tar.gz
   rm -f alist-linux-amd64.tar.gz
